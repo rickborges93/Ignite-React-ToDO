@@ -1,6 +1,7 @@
 import { Header } from "./components/Header";
 import styles from "./App.module.css";
 import { PlusCircle } from "phosphor-react";
+import { EmptyList } from "./components/EmptyList";
 
 function App() {
 
@@ -19,6 +20,8 @@ function App() {
               <div className={ styles.createdTask }>Tarefas criadas <span>0</span></div>
               <div className={ styles.finishedTask }>Concluídas <span>0</span></div>
             </div>
+
+            <EmptyList />
           </section>
 
         </div>
