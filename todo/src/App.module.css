@@ -11,7 +11,7 @@
     width: 100%;
 }
 
-.content header {
+.content form {
     display: flex;
     flex-direction: row;
     gap: 0.5rem;
@@ -79,3 +79,8 @@
     border-radius: 999px;
     background: var(--gray-400);
 }
+
+.newTaskForm  button[type=submit]:disabled {
+    opacity: 0.7;
+    cursor: not-allowed;
+} 

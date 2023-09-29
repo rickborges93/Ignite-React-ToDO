@@ -28,6 +28,10 @@
     cursor: pointer;
 }
 
+.taskContent svg:hover {
+    color: var(--danger);
+}
+
 .taskContent input {
     position: absolute;
     opacity: 0;
@@ -69,10 +73,16 @@
     background-color: var(--blue-dark-opacity);
 }
   
-  /* Quando o checkbox é clicado, adicionar um fundo rosa */
+  /* Quando o checkbox é clicado, adicionar um fundo roxo */
 .container input:checked ~ .checkmark {
     background-color: var(--purple-dark);
     border: 2px solid var(--purple-dark);
+}
+
+/* Quando o checkbox está selecionado, muda a estilização do texto */
+.container:has(input:checked) {
+    color: var(--gray-300);
+    text-decoration: line-through;
 }
   
   /* Criar o ícone de check, escondido quando não estiver selecionado */
