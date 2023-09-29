@@ -24,11 +24,14 @@
     color: var(--gray-100);
 }
 
-.taskContent svg {
+.taskContent .svgContainer {
     cursor: pointer;
+    padding: 5px 4.52px 0px 5px;
+    border-radius: 4px;
 }
 
-.taskContent svg:hover {
+.taskContent .svgContainer:hover {
+    background-color: var(--gray-500);
     color: var(--danger);
 }
 
@@ -40,12 +43,13 @@
     width: 0;
 }
 
+/* Estilização do texto */
 .container {
-    /* display: block; */
     position: relative;
     padding-left: 35px;
     cursor: pointer;
     font-size: 22px;
+    word-break: break-word;
 }
   
   /* Esconder o checkbox padrão */

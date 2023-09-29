@@ -17,7 +17,9 @@ export function Task({ id, content, isChecked, handleRemoveTask, handleCheckTask
                 <input type='checkbox' defaultChecked={isChecked} onChange={() => handleCheckTask(id)} />
                 <span className={ styles.checkmark }></span>
             </label>
-            <Trash size={16} onClick={() => handleRemoveTask(id)} />
+            <div className={ styles.svgContainer }>
+                <Trash size={16} onClick={() => handleRemoveTask(id)} />
+            </div>
         </div>
     )
 }
