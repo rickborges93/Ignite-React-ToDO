@@ -43,12 +43,13 @@
     width: 0;
 }
 
+/* Estilização do texto */
 .container {
-    /* display: block; */
     position: relative;
     padding-left: 35px;
     cursor: pointer;
     font-size: 22px;
+    word-break: break-word;
 }
   
   /* Esconder o checkbox padrão */
